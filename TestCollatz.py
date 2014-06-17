@@ -84,6 +84,10 @@ class TestCollatz (TestCase) :
         v = collatz_eval(1000, 900)
         self.assertEqual(v, 174)
 
+    # def test_eval_6 (self) :
+    #     v = collatz_eval(10,10)
+    #     self.assertEqual(v, 7)
+
     # -----
     # print
     # -----
@@ -118,12 +122,12 @@ main()
 
 """
 % coverage3 run --branch TestCollatz.py
-FFFF..F
+FFFFF.....FF
 ======================================================================
 FAIL: test_eval_1 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 47, in test_eval_1
+  File "TestCollatz.py", line 69, in test_eval_1
     self.assertEqual(v, 20)
 AssertionError: 1 != 20
 
@@ -131,7 +135,7 @@ AssertionError: 1 != 20
 FAIL: test_eval_2 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 51, in test_eval_2
+  File "TestCollatz.py", line 73, in test_eval_2
     self.assertEqual(v, 125)
 AssertionError: 1 != 125
 
@@ -139,7 +143,7 @@ AssertionError: 1 != 125
 FAIL: test_eval_3 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 55, in test_eval_3
+  File "TestCollatz.py", line 77, in test_eval_3
     self.assertEqual(v, 89)
 AssertionError: 1 != 89
 
@@ -147,15 +151,23 @@ AssertionError: 1 != 89
 FAIL: test_eval_4 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 59, in test_eval_4
+  File "TestCollatz.py", line 81, in test_eval_4
     self.assertEqual(v, 174)
 AssertionError: 1 != 174
 
 ======================================================================
-FAIL: test_solve (__main__.TestCollatz)
+FAIL: test_eval_5 (__main__.TestCollatz)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "TestCollatz.py", line 78, in test_solve
+  File "TestCollatz.py", line 85, in test_eval_5
+    self.assertEqual(v, 174)
+AssertionError: 1 != 174
+
+======================================================================
+FAIL: test_solve_1 (__main__.TestCollatz)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestCollatz.py", line 108, in test_solve_1
     self.assertEqual(w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
 AssertionError: '1 10 1\n100 200 1\n201 210 1\n900 1000 1\n' != '1 10 20\n100 200 125\n201 210 89\n900 1000 174\n'
 - 1 10 1
@@ -174,18 +186,44 @@ AssertionError: '1 10 1\n100 200 1\n201 210 1\n900 1000 1\n' != '1 10 20\n100 20
 ?           ++
 
 
+======================================================================
+FAIL: test_solve_2 (__main__.TestCollatz)
 ----------------------------------------------------------------------
-Ran 7 tests in 0.004s
+Traceback (most recent call last):
+  File "TestCollatz.py", line 114, in test_solve_2
+    self.assertEqual(w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n1000 900 174\n")
+AssertionError: '1 10 1\n100 200 1\n201 210 1\n1000 900 1\n' != '1 10 20\n100 200 125\n201 210 89\n1000 900 174\n'
+- 1 10 1
+?      ^
++ 1 10 20
+?      ^^
+- 100 200 1
++ 100 200 125
+?          ++
+- 201 210 1
+?         ^
++ 201 210 89
+?         ^^
+- 1000 900 1
++ 1000 900 174
+?           ++
 
-FAILED (failures=5)
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.008s
+
+FAILED (failures=7)
+
+
 
 
 
 % coverage3 report -m
-Name           Stmts   Miss Branch BrMiss  Cover   Missing
-----------------------------------------------------------
-Collatz          18      0      6      0   100%
-TestCollatz      33      1      0      0    97%   86
-----------------------------------------------------------
-TOTAL            51      1      6      0    98%
+Name          Stmts   Miss Branch BrMiss  Cover   Missing
+---------------------------------------------------------
+Collatz          22      0      6      0   100%   
+TestCollatz      59      1      0      0    98%   123
+---------------------------------------------------------
+TOTAL            81      1      6      0    99%
+
 """
