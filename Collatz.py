@@ -12,10 +12,10 @@
 
 def collatz_read (r) :
     """
-read two ints
-r is a reader
-return a list of the two ints, otherwise a list of zeros
-"""
+    read two ints
+    r is a reader
+    return a list of the two ints, otherwise a list of zeros
+    """
     s = r.readline()
     if s == "" :
         return []
@@ -28,10 +28,10 @@ return a list of the two ints, otherwise a list of zeros
 
 def collatz_eval (i, j) :
     """
-i is the beginning of the range, inclusive
-j is the end of the range, inclusive
-return the max cycle length in the range [i, j]
-"""
+    i is the beginning of the range, inclusive
+    j is the end       of the range, inclusive
+    return the max cycle length in the range [i, j]
+    """
     # <your code>
     return 1
 
@@ -41,12 +41,12 @@ return the max cycle length in the range [i, j]
 
 def collatz_print (w, i, j, v) :
     """
-print three ints
-w is a writer
-i is the beginning of the range, inclusive
-j is the end of the range, inclusive
-v is the max cycle length
-"""
+    print three ints
+    w is a writer
+    i is the beginning of the range, inclusive
+    j is the end       of the range, inclusive
+    v is the max cycle length
+    """
     w.write(str(i) + " " + str(j) + " " + str(v) + "\n")
 
 # -------------
@@ -55,10 +55,10 @@ v is the max cycle length
 
 def collatz_solve (r, w) :
     """
-read, eval, print loop
-r is a reader
-w is a writer
-"""
+    read, eval, print loop
+    r is a reader
+    w is a writer
+    """
     while True :
         a = collatz_read(r)
         if not a :
