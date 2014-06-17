@@ -56,13 +56,13 @@ def collatz_eval (i, j) :
         cycle = 1
 
     assert max_cycle > 0
-    return max_cycle
+    return max_cycle  
 
 # -------------
 # collatz_print
 # -------------
 
-def collatz_print (w, i, j, v) :
+def collatz_print (w, i, j, v) :  
     """
     print three ints
     w is a writer
