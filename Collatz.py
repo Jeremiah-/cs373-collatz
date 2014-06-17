@@ -36,7 +36,7 @@ def collatz_eval (i, j) :
     assert i, j < 1000000
 
     cycle = 1
-    max_cycle = 1  
+    max_cycle = 1
     x = 0
     if (i > j) :
         a = j
