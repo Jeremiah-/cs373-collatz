@@ -42,6 +42,7 @@ def collatz_eval (i, j) :
         a = j
         j = i
         i = a
+    j += 1
     for x in range(i, j) :
         current_Val = x
         while current_Val > 1 :
