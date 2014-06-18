@@ -1,0 +1,144 @@
+commit 075fa6122278f4c6dd1f3c0fa8680bea24d26da6
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 21:54:41 2014 -0500
+
+    adding collatz html
+
+commit d3be162b14c3894dd8fe8f70b52a10459b307d87
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 21:51:09 2014 -0500
+
+    Fixed the cache issue by making it global. Resolves #21
+
+commit eff8b5f6d26ce710d0b9aad360eabada954e0a01
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 21:33:29 2014 -0500
+
+    Resolves #11
+
+commit b85784b54ad76c1ec197c30b615a93d704969f96
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 20:48:51 2014 -0500
+
+    Solution with simple cache. Resolves #13.
+
+commit c1457255fc40acec3503f5580543bc9533b854fc
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 20:13:00 2014 -0500
+
+    Updated the coverage for TestCollatz.py
+
+commit fb32c67827feff910fc8ad073fa722812c6ac7f8
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 19:41:52 2014 -0500
+
+    Accepted sphere solution without a cache. Resolves #10
+
+commit 0efff1dc19e21863ddf9f7b943bb3f787976dd8e
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 19:40:47 2014 -0500
+
+    Accepted sphere solution without a cache. Solves #10
+
+commit e77ea22665124c4df4aeaaec5430fcfafefb975f
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 19:35:05 2014 -0500
+
+    Added optimizations that resolve #19 and resolve #20
+
+commit 051f9918ac880855c6de4ed757c48560cacbfb43
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 19:33:26 2014 -0500
+
+    the accepted non-cache solution for sphere
+
+commit bc43a86497c35d9d4438bd53e31be1a28d97650c
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 18:43:51 2014 -0500
+
+    Resolves #18 by simply adding 1 to the end of the range (j + 1 will not be computed). Also added case in TestCollatz.py that tests for i = j
+
+commit e10331bac86c7ef644c7d17dfba9cc9233fd8c51
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 02:00:29 2014 -0500
+
+    fixes #17, not #18
+
+commit 1fc560e59f0433a633af4602bd5f82e0f105eea0
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 01:59:14 2014 -0500
+
+    fixes #17, not #18
+
+commit fa5bf85da0d409d93440a64e988e5cdbc06e41b7
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 01:58:14 2014 -0500
+
+    fies #17, not #18
+
+commit 24aafdd3fccb52037f714eccdd00cb02b1c787bb
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 01:52:29 2014 -0500
+
+    Made simple solution without a cache, resolves #9. Also fixed #18 by swapping values and then finding the range.
+
+commit 841c538de4a42f85ed9973c2d524a44317cad76e
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Tue Jun 17 01:00:16 2014 -0500
+
+    updated the coverage for the tests before adding a simple solution without a cache
+
+commit 2e98e8ee71da9e72f1fa9b54c85bc4dffc3da437
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Mon Jun 16 23:51:08 2014 -0500
+
+    this resolves #8 by adding enough unit tests for an average of 3 tests for each function in Collatz.py
+
+commit 25424b4fa9fa7ca7ec646c1dd1a30a3fc52017aa
+Merge: d23f618 0c30a25
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Mon Jun 16 21:19:07 2014 -0500
+
+    trying to sync
+
+commit d23f618cfa8e451e9ea7cd29534b08744719a2ca
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Mon Jun 16 21:14:44 2014 -0500
+
+    just trying to sync
+
+commit 6e472e5bbcb2aae758067fc41deb28ccfb799183
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Mon Jun 16 21:07:02 2014 -0500
+
+    adding the basic files again
+
+commit 0c30a2533d25a647b4642fcc8025ce81c5633eeb
+Author: Jeremiah- <Jeremiah.H.Martinez@utexas.edu>
+Date:   Mon Jun 16 21:05:46 2014 -0500
+
+    Delete Collatz.py
+
+commit 9b98db28dbf563163ac14fabf137f1001d32913f
+Author: Jeremiah- <Jeremiah.H.Martinez@utexas.edu>
+Date:   Fri Jun 13 23:25:09 2014 -0500
+
+    Delete RunCollatz.in
+
+commit ca45bae2e36e4a4b24bdcb37547db6fee0f9e317
+Author: Jeremiah- <Jeremiah.H.Martinez@utexas.edu>
+Date:   Fri Jun 13 23:25:02 2014 -0500
+
+    Delete RunCollatz.out
+
+commit aa1dceada4488ce224b5e45f4dec8579b5bff89a
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Fri Jun 13 22:38:23 2014 -0500
+
+    added the basic files for the project
+
+commit 02b8cfdb1b565b70b8dc60af0f6932f5d18ffc2d
+Author: Jeremiah Martinez <jeremiah@cs.utexas.edu>
+Date:   Mon Jun 9 18:16:56 2014 -0500
+
+    first commit
