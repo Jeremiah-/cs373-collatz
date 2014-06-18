@@ -100,7 +100,7 @@ def collatz_solve (r, w) :
     r is a reader
     w is a writer
     """
-    while True :
+    while True :  
         a = collatz_read(r)
         if not a :
             return
