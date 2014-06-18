@@ -104,7 +104,7 @@ def collatz_solve (r, w) :
         a = collatz_read(r)
         if not a :
             return
-        i, j = a
+        i, j = a  
         v = collatz_eval(i, j)
         collatz_print(w, i, j, v)
 
