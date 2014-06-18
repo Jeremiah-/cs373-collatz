@@ -122,7 +122,7 @@ main()
 
 """
 % coverage3 run --branch TestCollatz.py
-FFFFF.....FF
+FFFFFF.....FF
 ======================================================================
 FAIL: test_eval_1 (__main__.TestCollatz)
 ----------------------------------------------------------------------
@@ -162,6 +162,14 @@ Traceback (most recent call last):
   File "TestCollatz.py", line 85, in test_eval_5
     self.assertEqual(v, 174)
 AssertionError: 1 != 174
+
+======================================================================
+FAIL: test_eval_6 (__main__.TestCollatz)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "TestCollatz.py", line 89, in test_eval_6
+    self.assertEqual(v, 7)
+AssertionError: 1 != 7
 
 ======================================================================
 FAIL: test_solve_1 (__main__.TestCollatz)
@@ -210,9 +218,11 @@ AssertionError: '1 10 1\n100 200 1\n201 210 1\n1000 900 1\n' != '1 10 20\n100 20
 
 
 ----------------------------------------------------------------------
-Ran 12 tests in 0.008s
+Ran 13 tests in 0.004s
 
-FAILED (failures=7)
+FAILED (failures=8)
+
+
 
 
 
@@ -221,9 +231,9 @@ FAILED (failures=7)
 % coverage3 report -m
 Name          Stmts   Miss Branch BrMiss  Cover   Missing
 ---------------------------------------------------------
-Collatz          22      0      6      0   100%   
-TestCollatz      59      1      0      0    98%   123
+Collatz          23      0      6      0   100%   
+TestCollatz      62      1      0      0    98%   123
 ---------------------------------------------------------
-TOTAL            81      1      6      0    99%
+TOTAL            85      1      6      0    99%   
 
 """
